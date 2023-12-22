@@ -13,10 +13,17 @@
           class="container flex-row justify-space-between-lg justify-center align-center">
           <h1 class="m-0">UI/UX Tips</h1>
           <p class="m-0">Get practical advice from other developers.</p>
-          <a href="../index.html" class="btn" id="home-btn">Homepage</a>
+          <button class="btn" id="home-btn">Homepage</button>
         </div>
       </header>
     </section>
     <img src="../images/notfound.jpg" alt="404 page not found" />
   </body>
+  <script>
+    const homeBtn = document.getElementById("home-btn");
+    homeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "/";
+    });
+  </script>
 </html>
